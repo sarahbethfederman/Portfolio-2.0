@@ -13,3 +13,6 @@
   <![endif]-->
 </head>
 <body>
+<?php
+  get_template_part('nav');
+?>
