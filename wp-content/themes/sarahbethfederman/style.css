@@ -8,6 +8,50 @@ Version: 1.0
 Tags: portfolio, sarah, federman, responsive
 
 */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body, html {
+  height: 100%; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  background-color: #333333;
+  overflow-x: auto;
+  overflow-y: hidden; }
+
+@-webkit-keyframes post-intro {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes post-intro {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -371,10 +415,11 @@ th {
   position: fixed;
   top: 0;
   height: 50px;
+  z-index: 100;
   width: 100%;
   background-color: white;
-  -webkit-box-shadow: 0 2px 5px #cccccc;
-          box-shadow: 0 2px 5px #cccccc; }
+  -webkit-box-shadow: 0 0 5px #cccccc;
+          box-shadow: 0 0 5px #cccccc; }
 
 .main-nav {
   list-style-type: none;
@@ -385,9 +430,10 @@ th {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
-  .main-nav a {
-    text-decoration: none; }
+          justify-content: center;
+  text-transform: uppercase; }
+  .main-nav li {
+    margin: 0 10px; }
 
 .logo {
   margin: 0 20px; }
@@ -395,9 +441,80 @@ th {
 .social {
   position: absolute;
   right: 0;
-  padding: 0 20px; }
+  padding: 0 20px;
+  text-transform: none; }
   .social ul {
     list-style-type: none; }
   .social li {
     float: left;
     margin: 0 5px; }
+
+.post {
+  min-width: 320px;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+  -webkit-animation-name: post-intro;
+          animation-name: post-intro;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 0; }
+  .post__background {
+    position: relative;
+    top: 0;
+    opacity: .3;
+    height: 100%;
+    width: 320px; }
+  .post:hover {
+    z-index: 10;
+    -webkit-transform: scaleX(2);
+        -ms-transform: scaleX(2);
+            transform: scaleX(2); }
+
+.post:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  background-color: #100d0b; }
+
+.post:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  background-color: #878462; }
+
+.post:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  background-color: #144974; }
+
+.post:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  background-color: #43580a; }
+
+.post:nth-child(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  background-color: #878b0d; }
+
+.post:nth-child(6) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  background-color: #2d676c; }
+
+.post:nth-child(7) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+  background-color: #8f8768; }
+
+.post:nth-child(8) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+  background-color: #173633; }

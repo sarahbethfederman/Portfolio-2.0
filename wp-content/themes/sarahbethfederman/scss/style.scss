@@ -5,11 +5,13 @@
 // wordpress
 @import "partials/wordpress";
 
-// variables
-@import "partials/variables";
+// variables & global styles
+@import "partials/base";
+@import "partials/animations";
 
 // normalize
 @import "partials/normalize";
 
 // templates
 @import "partials/templates/nav";
+@import "partials/templates/post-box";
