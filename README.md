@@ -1,6 +1,6 @@
 Portfolio-2.0
 =============
-by Sarah Federman
+by Sarah Federman,
 Project started: 8/13/14
 
 Personal portfolio redesign - this time creating a custom Wordpress theme from scratch
