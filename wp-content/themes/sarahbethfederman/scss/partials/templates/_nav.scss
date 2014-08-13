@@ -1,0 +1,33 @@
+.nav-bar {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0 2px 5px $light-grey;
+}
+.main-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  margin: 0 20px;
+}
+
+.social {
+  position: absolute;
+  right: 0;
+  padding: 0 20px;
+  ul {
+    list-style-type: none;
+  }
+  li {
+    float: left;
+    margin: 0 5px;
+  }
+}
