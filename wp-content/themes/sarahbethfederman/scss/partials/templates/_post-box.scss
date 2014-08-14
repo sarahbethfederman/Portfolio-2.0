@@ -1,12 +1,10 @@
 .post {
-  min-width: 320px;
+  width: 320px;
   height: 100%;
   display: block;
   position: relative;
   overflow: hidden;
   opacity: 0;
-
-  //transform-origin: center center;
   transition: all .3s ease;
   animation-name: post-intro;
   animation-duration: .3s;
@@ -16,15 +14,14 @@
   &__background {
     position: relative;
     top: 0;
+    left: -60%;
     opacity: .3;
     height: 100%;
-    width: 320px;   // serve this image dimension from wordpress
+    //width: 320px;   // serve this image dimension from wordpress
   }
   &:hover {
-
-  //  box-shadow: 0 0 30px $black;
+    box-shadow: 0 0 50px $black;
     z-index: 10;
-    transform: scaleX(2);
   }
 }
 

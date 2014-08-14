@@ -1,8 +1,12 @@
 // variables ----------------------------- //
 
 $white: #FFF;
-$dark-grey: #333;
+$black: #000;
+$dark-grey: #222;
+$grey: #333;
 $light-grey: #ccc;
+
+$nav-height: 60px;
 
 // base styles ----------------------------- //
 
@@ -11,7 +15,7 @@ $light-grey: #ccc;
 }
 
 body, html {
-//  width: 100%;
+  width: 100%;
   height: 100%;
 }
 
@@ -23,7 +27,7 @@ a {
   height: 100%;
   position: absolute;
   display: flex;
-  padding-top: 50px;
+  padding-top: $nav-height;
   background-color: $dark-grey;
   overflow-x: auto;
   overflow-y: hidden;
