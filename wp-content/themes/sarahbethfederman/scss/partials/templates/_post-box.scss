@@ -1,34 +1,74 @@
-.post {
-  width: 320px;
-  height: 100%;
-  display: block;
-  position: relative;
-  overflow: hidden;
-  opacity: 0;
-  transition: all .3s ease;
-  animation-name: post-intro;
-  animation-duration: .3s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  z-index: 0;
-  &__background {
-    position: relative;
-    top: 0;
-    left: -60%;
-    opacity: .3;
-    height: 100%;
-    //width: 320px;   // serve this image dimension from wordpress
-  }
-  &:hover {
-    box-shadow: 0 0 50px $black;
-    z-index: 10;
-  }
-}
-
 @for $i from 1 through 8 {
   $color: 255-($i * 25);
   .post:nth-child(#{$i}) {
     animation-delay: ($i * .2) + s;
     background-color: rgba(random(150), random(150), random(150), 1);
+  }
+}
+
+
+.post {
+  max-width: 350px;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform-origin: 50% 50%;
+  transition: all .5s ease-out;
+  animation-name: post-intro;
+  animation-duration: .3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+ z-index: 0;
+  &__background {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateX(-10%);
+    opacity: .3;
+    min-width: 110%;
+    min-height: 100%;
+    transition: all .5s ease-out;
+  }
+  &__content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 350px;
+    padding: 30px;
+    color: $white;
+    opacity: 0;
+    transition: all .4s ease;
+  }
+  &__title {
+    font-size: remify(46px);
+  }
+  &__description {
+    font-size: remify(20px);
+    font-weight: normal;
+  }
+  &:hover {
+    max-width: 400px;
+    background-color: $black;
+    .post__background {
+      transform: translateX(0);
+      opacity: .15;
+    }
+    .post__content {
+      opacity: 1;
+    }
+  }
+}
+
+.active, .active:hover {
+  max-width: 100%;
+  width: 100%;
+  z-index: 100;
+  .post__content {
+    opacity: 1;
+  }
+  .post__background {
+    opacity: 0;
   }
 }
