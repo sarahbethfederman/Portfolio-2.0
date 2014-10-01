@@ -53,8 +53,9 @@
   }
 }
 
-.right {
+.right, .social {
   position: absolute;
+  list-style-type: none;
   right: 10px;
   ul {
     list-style-type: none;
@@ -64,7 +65,7 @@
     margin: 0 5px;
     @for $i from 1 through 6 {
       &:nth-child(#{$i}) svg:hover {
-        fill: rgba(random(150), random(150), random(150), 1); // make an array of colors soon
+        fill: rgba(random(250), random(250), random(250), 1); // make an array of colors soon
       }
     }
   }
@@ -73,4 +74,9 @@
     width: 25px;
     transition: all .2s linear;
   }
+}
+.social {
+  left: 15px;
+  right: auto;
+  width: 250px;
 }

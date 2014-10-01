@@ -18,10 +18,16 @@ body, html {
   width: 100%;
   height: 100%;
   font-family: 'proxima nova', sans-serif;
+  color: $grey;
 }
 
-a {
+a, a:visited {
+  color: $light-grey;
   text-decoration: none;
+  transition: color .2s linear;
+  &:hover {
+    color: #000;
+  }
 }
 
 h3 {
@@ -46,11 +52,14 @@ h3 {
   @extend .container;
   height: auto;
   min-height: 100%;
+  h3 {
+    color: $grey;
+  }
 }
 
 .content {
   width: 80%;
-  margin-bottom: 50px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   background-color: #FFF;
@@ -63,7 +72,8 @@ h3 {
   box-shadow: 0 0 4px $light-grey;
   img {
     display: block;
-    max-width: 50%;
+    max-width: 100%;
+    height: auto;
   }
 }
 

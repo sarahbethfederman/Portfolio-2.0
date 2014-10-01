@@ -2,7 +2,7 @@
   get_header();
 ?>
 
-  <div class="post-container" data-color="orange">
+  <div class="post-container" data-color="">
     <div class="content">
       <a href="<?php echo home_URL(); ?>"><img class="close" src="<?php echo get_template_directory_URI();?>/img/icons/x-icon.svg"></a>
       <div>

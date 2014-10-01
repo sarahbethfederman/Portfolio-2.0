@@ -7,7 +7,7 @@
               JOIN wp_posts ON wp_term_relationships.object_id = wp_posts.ID
               WHERE wp_terms.name = "project" AND wp_term_taxonomy.taxonomy = "category")
               AND post_status = "publish"
-              ORDER BY wp_posts.post_date ASC';
+              ORDER BY wp_posts.post_date DESC';
 
   $posts = $wpdb->get_results( $query );
 
