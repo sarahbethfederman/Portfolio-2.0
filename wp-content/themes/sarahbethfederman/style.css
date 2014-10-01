@@ -541,17 +541,17 @@ th {
     float: left;
     margin: 0 5px; }
     .right li:nth-child(1) svg:hover {
-      fill: #173147; }
+      fill: #6d7679; }
     .right li:nth-child(2) svg:hover {
-      fill: #6f6d8a; }
+      fill: #724f71; }
     .right li:nth-child(3) svg:hover {
-      fill: #87633d; }
+      fill: #1e6a2d; }
     .right li:nth-child(4) svg:hover {
-      fill: #3e2b68; }
+      fill: #474083; }
     .right li:nth-child(5) svg:hover {
-      fill: #0b6c6e; }
+      fill: #709627; }
     .right li:nth-child(6) svg:hover {
-      fill: #3e651c; }
+      fill: #437c50; }
   .right svg {
     fill: rgba(50, 50, 50, 0.3);
     width: 25px;
@@ -561,42 +561,42 @@ th {
 .post:nth-child(1) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
-  background-color: #5e356b; }
+  background-color: #0f3222; }
 
 .post:nth-child(2) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
-  background-color: #0d5b4a; }
+  background-color: #51336b; }
 
 .post:nth-child(3) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
-  background-color: #548081; }
+  background-color: #799202; }
 
 .post:nth-child(4) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
-  background-color: #764960; }
+  background-color: #528732; }
 
 .post:nth-child(5) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  background-color: #5f0154; }
+  background-color: #92765c; }
 
 .post:nth-child(6) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
-  background-color: #228c05; }
+  background-color: #54888d; }
 
 .post:nth-child(7) {
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
-  background-color: #3f4b43; }
+  background-color: #2d678f; }
 
 .post:nth-child(8) {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
-  background-color: #4e9023; }
+  background-color: #920c45; }
 
 .post {
   width: 350px;
@@ -618,9 +618,9 @@ th {
     position: relative;
     top: 0;
     left: 0;
-    -webkit-transform: translateX(-10%);
-        -ms-transform: translateX(-10%);
-            transform: translateX(-10%);
+    -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+            transform: translateX(-20px);
     opacity: .3;
     min-width: 110%;
     min-height: 100%;

@@ -13,3 +13,4 @@ Theme directory is under wp-content/themes/sarahbethfederman (https://github.com
 - Wordpress plugins:
   - Akismet - Wordpress standard spam prevention
   - Yoast's SEO
+  - Advanced custom fields
