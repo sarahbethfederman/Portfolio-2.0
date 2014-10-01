@@ -541,17 +541,17 @@ th {
     float: left;
     margin: 0 5px; }
     .right li:nth-child(1) svg:hover {
-      fill: #6d7679; }
+      fill: #0c2c4f; }
     .right li:nth-child(2) svg:hover {
-      fill: #724f71; }
+      fill: #58314b; }
     .right li:nth-child(3) svg:hover {
-      fill: #1e6a2d; }
+      fill: #745f8e; }
     .right li:nth-child(4) svg:hover {
-      fill: #474083; }
+      fill: #494c83; }
     .right li:nth-child(5) svg:hover {
-      fill: #709627; }
+      fill: #156a70; }
     .right li:nth-child(6) svg:hover {
-      fill: #437c50; }
+      fill: #13033b; }
   .right svg {
     fill: rgba(50, 50, 50, 0.3);
     width: 25px;
@@ -561,42 +561,42 @@ th {
 .post:nth-child(1) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
-  background-color: #0f3222; }
+  background-color: #6a957a; }
 
 .post:nth-child(2) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
-  background-color: #51336b; }
+  background-color: #1b443c; }
 
 .post:nth-child(3) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
-  background-color: #799202; }
+  background-color: #171050; }
 
 .post:nth-child(4) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
-  background-color: #528732; }
+  background-color: #662627; }
 
 .post:nth-child(5) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  background-color: #92765c; }
+  background-color: #032e21; }
 
 .post:nth-child(6) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
-  background-color: #54888d; }
+  background-color: #291680; }
 
 .post:nth-child(7) {
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
-  background-color: #2d678f; }
+  background-color: #915b41; }
 
 .post:nth-child(8) {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
-  background-color: #920c45; }
+  background-color: #128c81; }
 
 .post {
   width: 350px;
