@@ -17,6 +17,7 @@
     $img = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), full)[0];
     $title = $post->post_title;
     $excerpt = $post->post_excerpt;
+    $content = $post->post_content;
 
     $markup .= '<a class="post" href="'. $url .'" id="'. $slug .'">';
     $markup .= '<img class="post__background" src="'. $img .'">';
@@ -27,9 +28,11 @@
     $markup .= '</a>';
   }
 ?>
-<div class="container">
+<div class="container" data-color="#222">
   <?php echo $markup; ?>
 </div>
+
+
 
 <?php
   get_footer();

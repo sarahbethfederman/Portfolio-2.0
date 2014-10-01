@@ -1,17 +1,14 @@
   <header class="nav-bar">
     <nav>
       <ul class="main-nav">
-        <li class="menu"><a href="#">Menu</a>
-          <ul>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Resume</a></li>
-          </ul>
-        </li>
+        <li class="left"><a href="<?php echo get_permalink(42); ?>">About</a></li>
 
-        <li><a href="#"><img class="logo" src="wp-content/themes/sarahbethfederman/img/logo.svg" width="60"></a></li>
+        <li><a href="<?php echo home_url() ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" width="60"></a></li>
 
-        <li class="social">
+        <li class="right"><a href="<?php echo get_category_link(2); ?>">Blog</a></li>
+      </ul>
+
+        <!-- <li class="social">
           <ul>
             <li>
               <a href="https://github.com/sarahbethfederman">
@@ -71,6 +68,6 @@
               </a>
             </li>
           </ul>
-        </li>
+        </li> -->
     </nav>
   </header>

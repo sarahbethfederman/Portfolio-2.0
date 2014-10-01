@@ -1,1 +1,1 @@
-function init(){for(var n=0;n<posts.length;n++)console.log("clicK added"),posts[n].addEventListener("click",addHandler(posts[n]))}function addHandler(n){return function(){n.className+=" active"}}var posts=document.querySelectorAll(".post");window.onload=init;
+$(document).ready(function(){$(".container, .post-container").css("background",function(){return $(this).data("color")})});
