@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'sbf1973');
 
 /** MySQL database username */
-define('DB_USER', 'sarah');
+define('DB_USER', 'sbf1973');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'Gummygirl1');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'cias.rit.edu');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -83,6 +83,7 @@ define('WP_DEBUG', false);
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
+define('ABSPATH', 'http://sbf1973.cias.rit.edu/');
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 

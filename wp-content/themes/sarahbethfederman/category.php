@@ -14,7 +14,8 @@
   foreach ($posts as $post) {
     $url = get_permalink($post->ID);
     $slug = $post->post_name;
-    $img = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), full)[0];
+    $imgUrl = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), full);
+    $img = $imgUrl[0];
     $title = $post->post_title;
     $excerpt = $post->post_excerpt;
     $content = $post->post_content;
